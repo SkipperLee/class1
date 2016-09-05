@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<button id="showD">弹出窗口</button>
+		<script src="script/dialog.js"></script>
+		<script>
+			document.getElementById("showD").onclick=function(){
+				alert({text:"重定义弹窗！",closeCallBack:function(obj){
+					console.log(obj);
+				}});
+			}
+		</script>
+	</body>
+</html>
